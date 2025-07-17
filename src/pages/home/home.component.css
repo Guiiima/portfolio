@@ -1,0 +1,48 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.cta-button-glow {
+    transition: all 0.3s ease-in-out, box-shadow 0.4s ease;
+}
+
+.cta-button-glow:hover {
+  box-shadow: 0 0 15px 0 rgba(242, 195, 94, 0.5);
+}
+
+.card-hover-effect {
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card-hover-effect:hover {
+  border-color: #f2c35e;
+}
+
+.card-hover-effect img {
+    transition: transform 0.4s ease-out;
+}
+
+.card-hover-effect:hover img {
+  transform: scale(1.05);
+}
+
+.skill-icon-interactive {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.skill-icon-interactive:hover {
+  filter: drop-shadow(0 0 8px rgba(242, 195, 94, 0.6));
+}
+
+@keyframes kenburns {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  100% {
+    transform: scale(1.1) translate(-2%, 1%);
+  }
+}
+
+.hero-animated-bg {
+  animation: kenburns 40s ease-in-out infinite alternate;
+}
